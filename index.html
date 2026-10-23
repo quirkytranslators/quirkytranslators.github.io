@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pig Latin Translator: A Tiny Tool and a Plain Guide</title>
+<meta name="description" content="Convert English to Pig Latin with a tiny free tool, then learn the rules, examples, and answers to common questions.">
+<style>
+  :root { --brand: #6C5CE7; --ink: #23222b; --paper: #fbfaff; --card: #ffffff; --line: #e4e1f5; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: Georgia, "Times New Roman", serif; background: var(--paper); color: var(--ink); line-height: 1.65; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 28px 18px 56px; }
+  header { text-align: center; padding: 26px 0 8px; }
+  header h1 { font-size: 2.1rem; margin: 0 0 8px; color: var(--ink); }
+  header p { margin: 0; color: #55536b; font-size: 1.05rem; }
+  .tool { background: var(--card); border: 1px solid var(--line); border-top: 4px solid var(--brand); border-radius: 10px; padding: 20px; margin: 24px 0 34px; }
+  .tool label { display: block; font-weight: bold; margin-bottom: 8px; }
+  textarea { width: 100%; min-height: 110px; padding: 12px; border: 1px solid var(--line); border-radius: 8px; font: inherit; resize: vertical; }
+  button { background: var(--brand); color: #fff; border: 0; border-radius: 8px; padding: 11px 22px; font-size: 1rem; cursor: pointer; margin: 12px 0; }
+  button:hover { opacity: 0.92; }
+  .out-label { font-weight: bold; margin: 6px 0 8px; }
+  #output { background: #f3f1fd; border: 1px dashed var(--brand); border-radius: 8px; padding: 12px; min-height: 60px; white-space: pre-wrap; word-wrap: break-word; }
+  h2 { color: var(--brand); font-size: 1.45rem; margin: 34px 0 10px; }
+  h3 { font-size: 1.1rem; margin: 20px 0 6px; }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  .example { background: #fff; border-left: 4px solid var(--brand); padding: 8px 14px; margin: 0 0 12px; }
+  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--line); color: #55536b; font-size: 0.95rem; text-align: center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <img src="pig-latin.jpg" alt="Illustration of a cheerful pig wearing glasses and reading a book" style="max-width:100%;height:auto;border-radius:10px;margin-bottom:14px">
+  <h1>Pig Latin Translator</h1>
+  <p>A tiny tool, the rules behind it, and practice lines to try.</p>
+</header>
+
+<section class="tool">
+  <label for="input">Type or paste English here</label>
+  <textarea id="input" placeholder="Try: hello world, this is fun"></textarea>
+  <button id="convertBtn" type="button">Convert to Pig Latin</button>
+  <p class="out-label">Your Pig Latin</p>
+  <div id="output">Your converted text will appear here.</div>
+</section>
+
+<h2>What Is Pig Latin?</h2>
+<p>Pig Latin is a word game played with English. Players change each word by a fixed set of rules, and the result sounds like a secret code. Friends use it for jokes, notes, and playful chat.</p>
+<p>Nobody is born speaking it. Most people pick it up at school or from friends, then teach it on in minutes. Once your ear learns the pattern, you can decode it at talking speed.</p>
+
+<h2>The Rules</h2>
+<h3>Rule 1: Words that start with a consonant</h3>
+<p>Move the starting consonant sounds to the end of the word, then add ay. Pig becomes igpay, and Latin becomes atinlay. A cluster of consonants moves as one piece, so string becomes ingstray and chair becomes airchay.</p>
+<h3>Rule 2: Words that start with a vowel</h3>
+<p>Leave the word where it is and add way to the end. Apple becomes appleway, and egg becomes eggway. This rule is the easiest one to hear, since the word itself stays whole.</p>
+<h3>Rule 3: The qu pair travels together</h3>
+<p>When q and u open a word, they count as one consonant sound. Queen becomes eenquay, and quiet becomes ietquay. Treat them as a pair and the word stays easy to say.</p>
+
+<h2>Practice Lines</h2>
+<p class="example">Hello world becomes ellohay orldway.</p>
+<p class="example">Thank you becomes ankthay ouyay.</p>
+<p class="example">This is fun becomes isthay isway unfay.</p>
+<p>Type any of these lines into the tool above and check your reading. Then try a line of your own, like your name or your street. Short lines are best while you learn the rhythm.</p>
+
+<h2>Questions People Ask</h2>
+<h3>Is Pig Latin a real language?</h3>
+<p>No. Pig Latin is a game played on top of English, not a language of its own. It has no grammar, no native speakers, and no set vocabulary beyond the words you feed it.</p>
+<h3>Where did it come from?</h3>
+<p>People have played word games like this in English for well over a hundred years. The modern form spread through schools, camps, and playgrounds. Its exact starting point is lost, which suits a game passed by word of mouth.</p>
+<h3>How do you decode it?</h3>
+<p>Take the ay ending off the word first. Then move the consonant sounds at the end back to the front. Words that end in way and start with a vowel just lose the way.</p>
+<h3>Does every English word work?</h3>
+<p>Nearly every word works with the two main rules. A few words have no a, e, i, o, or u, and players handle those in different ways. Pick the reading that sounds right and keep talking.</p>
+
+<h2>Keep Practising</h2>
+<p>Short daily practice beats one long session. Convert one message a day and read it back out loud. Within a week, short lines will feel easy to read and write.</p>
+<p>For longer texts, more examples, and a fuller set of tools, visit the <a href="https://quirkytranslators.com/fun-dialects/pig-latin-translator/">Pig Latin translator</a> at Quirky Translators. It handles whole paragraphs in one go and costs nothing to use.</p>
+
+<footer>
+  <p>Written by Arlo Bennett for Quirky Translators.</p>
+</footer>
+
+</div>
+
+<script>
+function convertWord(token) {
+  var match = token.match(/^([^A-Za-z]*)([A-Za-z]+)([^A-Za-z]*)$/);
+  if (!match) { return token; }
+  var lead = match[1];
+  var core = match[2];
+  var trail = match[3];
+  var lower = core.toLowerCase();
+  var vowels = "aeiou";
+  var result;
+  if (vowels.indexOf(lower.charAt(0)) !== -1) {
+    result = lower + "way";
+  } else {
+    var i = 0;
+    while (i < lower.length && vowels.indexOf(lower.charAt(i)) === -1) { i++; }
+    if (i === lower.length) {
+      result = lower + "ay";
+    } else {
+      if (lower.charAt(i) === "u" && lower.charAt(i - 1) === "q") { i++; }
+      result = lower.slice(i) + lower.slice(0, i) + "ay";
+    }
+  }
+  if (core.length > 1 && core === core.toUpperCase()) {
+    result = result.toUpperCase();
+  } else if (core.charAt(0) === core.charAt(0).toUpperCase()) {
+    result = result.charAt(0).toUpperCase() + result.slice(1);
+  }
+  return lead + result + trail;
+}
+
+function convertText() {
+  var text = document.getElementById("input").value;
+  var parts = text.split(/(\s+)/);
+  var done = parts.map(function(part) {
+    return /\s/.test(part) || part === "" ? part : convertWord(part);
+  });
+  document.getElementById("output").textContent = done.join("");
+}
+
+document.getElementById("convertBtn").addEventListener("click", convertText);
+</script>
+
+</body>
+</html>
